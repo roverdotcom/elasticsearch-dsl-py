@@ -15,7 +15,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-from elasticsearch_dsl import (
+from elasticsearch7_dsl import (
     Document,
     Keyword,
     Percolator,

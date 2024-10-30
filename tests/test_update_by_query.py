@@ -17,8 +17,8 @@
 
 from copy import deepcopy
 
-from elasticsearch_dsl import Q, UpdateByQuery
-from elasticsearch_dsl.response import UpdateByQueryResponse
+from elasticsearch7_dsl import Q, UpdateByQuery
+from elasticsearch7_dsl.response import UpdateByQueryResponse
 
 
 def test_ubq_starts_with_no_query():

@@ -19,7 +19,7 @@ from datetime import datetime
 
 from pytest import fixture
 
-from elasticsearch_dsl import Q
+from elasticsearch7_dsl import Q
 
 from .parent_child import Answer, Comment, Question, User, setup
 

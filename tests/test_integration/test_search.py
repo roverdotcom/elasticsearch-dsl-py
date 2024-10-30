@@ -23,8 +23,8 @@ import warnings
 from elasticsearch import TransportError
 from pytest import raises
 
-from elasticsearch_dsl import Date, Document, Keyword, MultiSearch, Q, Search, Text
-from elasticsearch_dsl.response import aggs
+from elasticsearch7_dsl import Date, Document, Keyword, MultiSearch, Q, Search, Text
+from elasticsearch7_dsl.response import aggs
 
 from .test_data import FLAT_DATA
 

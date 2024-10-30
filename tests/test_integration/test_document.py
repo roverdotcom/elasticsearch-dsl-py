@@ -24,7 +24,7 @@ from elasticsearch import ConflictError, NotFoundError
 from pytest import raises
 from pytz import timezone
 
-from elasticsearch_dsl import (
+from elasticsearch7_dsl import (
     Binary,
     Boolean,
     Date,
@@ -43,7 +43,7 @@ from elasticsearch_dsl import (
     Text,
     analyzer,
 )
-from elasticsearch_dsl.utils import AttrList
+from elasticsearch7_dsl.utils import AttrList
 
 snowball = analyzer("my_snow", tokenizer="standard", filter=["lowercase", "snowball"])
 

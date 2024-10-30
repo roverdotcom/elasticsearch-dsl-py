@@ -17,7 +17,7 @@
 
 import warnings
 
-from elasticsearch_dsl import Date, Document, Index, IndexTemplate, Text, analysis
+from elasticsearch7_dsl import Date, Document, Index, IndexTemplate, Text, analysis
 
 
 class Post(Document):
