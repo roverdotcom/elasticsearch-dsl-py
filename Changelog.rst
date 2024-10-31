@@ -3,6 +3,14 @@
 Changelog
 =========
 
+7.4.1.py311 (2024-10-31)
+------------------
+Rover fork for Python 3.11 support
+https://roverdotcom.atlassian.net/browse/DEV-96564
+https://github.com/roverdotcom/web/pull/71333
+ * Update setup.py to require Python 3.11
+
+
 7.4.1 (2023-03-01)
 ------------------
 
