@@ -21,7 +21,7 @@ SOURCE_FILES = (
     "setup.py",
     "noxfile.py",
     "docs/",
-    "elasticsearch_dsl/",
+    "elasticsearch7_dsl/",
     "examples/",
     "tests/",
     "utils/",
@@ -37,7 +37,7 @@ def test(session):
     else:
         argv = (
             "-vvv",
-            "--cov=elasticsearch_dsl",
+            "--cov=elasticsearch7_dsl",
             "--cov=tests.test_integration.test_examples",
             "tests/",
         )

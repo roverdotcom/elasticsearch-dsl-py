@@ -8,6 +8,7 @@ Changelog
 Rover fork for Python 3.11 support
 https://roverdotcom.atlassian.net/browse/DEV-96564
 https://github.com/roverdotcom/web/pull/71333
+ * Update source dir elasticsearch_dsl -> elasticsearch7_dsl for build purposes
  * Update setup.py to require Python 3.11
 
 
