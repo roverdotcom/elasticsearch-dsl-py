@@ -15,7 +15,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-from elasticsearch import Elasticsearch
+from elasticsearch7 import Elasticsearch
 from pytest import raises
 
 from elasticsearch7_dsl import connections, serializer

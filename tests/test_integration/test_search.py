@@ -20,7 +20,7 @@ from __future__ import unicode_literals
 
 import warnings
 
-from elasticsearch import TransportError
+from elasticsearch7 import TransportError
 from pytest import raises
 
 from elasticsearch7_dsl import Date, Document, Keyword, MultiSearch, Q, Search, Text

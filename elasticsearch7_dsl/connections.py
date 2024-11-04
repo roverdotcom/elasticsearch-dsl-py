@@ -15,7 +15,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-from elasticsearch import Elasticsearch, __version__
+from elasticsearch7 import Elasticsearch, __version__
 from six import string_types
 
 from .serializer import serializer
