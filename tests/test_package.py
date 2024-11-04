@@ -15,8 +15,8 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-import elasticsearch_dsl
+import elasticsearch7_dsl
 
 
 def test__all__is_sorted():
-    assert elasticsearch_dsl.__all__ == sorted(elasticsearch_dsl.__all__)
+    assert elasticsearch7_dsl.__all__ == sorted(elasticsearch7_dsl.__all__)

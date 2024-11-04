@@ -19,9 +19,9 @@ from copy import deepcopy
 
 from pytest import raises
 
-from elasticsearch_dsl import Document, Q, query, search
-from elasticsearch_dsl.connections import CLIENT_HAS_NAMED_BODY_PARAMS
-from elasticsearch_dsl.exceptions import IllegalOperation
+from elasticsearch7_dsl import Document, Q, query, search
+from elasticsearch7_dsl.connections import CLIENT_HAS_NAMED_BODY_PARAMS
+from elasticsearch7_dsl.exceptions import IllegalOperation
 
 
 def test_expand__to_dot_is_respected():

@@ -41,7 +41,7 @@ It is used to showcase several key features of elasticsearch-dsl:
 """
 from datetime import datetime
 
-from elasticsearch_dsl import (
+from elasticsearch7_dsl import (
     Boolean,
     Date,
     Document,

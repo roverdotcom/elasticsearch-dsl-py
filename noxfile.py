@@ -21,14 +21,14 @@ SOURCE_FILES = (
     "setup.py",
     "noxfile.py",
     "docs/",
-    "elasticsearch_dsl/",
+    "elasticsearch7_dsl/",
     "examples/",
     "tests/",
     "utils/",
 )
 
 
-@nox.session(python=["2.7", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9"])
+@nox.session(python=["2.7", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11"])
 def test(session):
     session.install(".[develop]")
 
@@ -37,7 +37,7 @@ def test(session):
     else:
         argv = (
             "-vvv",
-            "--cov=elasticsearch_dsl",
+            "--cov=elasticsearch7_dsl",
             "--cov=tests.test_integration.test_examples",
             "tests/",
         )

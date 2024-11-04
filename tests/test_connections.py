@@ -15,10 +15,10 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-from elasticsearch import Elasticsearch
+from elasticsearch7 import Elasticsearch
 from pytest import raises
 
-from elasticsearch_dsl import connections, serializer
+from elasticsearch7_dsl import connections, serializer
 
 
 def test_default_connection_is_returned_by_default():

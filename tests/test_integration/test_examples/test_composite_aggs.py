@@ -15,7 +15,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-from elasticsearch_dsl import A, Search
+from elasticsearch7_dsl import A, Search
 
 from .composite_agg import scan_aggs
 

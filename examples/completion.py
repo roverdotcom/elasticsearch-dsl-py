@@ -30,7 +30,7 @@ from __future__ import print_function, unicode_literals
 
 from itertools import permutations
 
-from elasticsearch_dsl import (
+from elasticsearch7_dsl import (
     Completion,
     Document,
     Keyword,
