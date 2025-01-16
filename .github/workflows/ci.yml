@@ -9,30 +9,30 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v1
-      - name: Set up Python 3.8
+      - name: Set up Python 3.11
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.11
       - name: Install dependencies
         run: |
-          python3.8 -m pip install setuptools wheel twine
+          python3.11 -m pip install setuptools wheel twine
       - name: Build packages
         run: |
-          python3.8 utils/build-dists.py
+          python3.11 utils/build-dists.py
       - name: Check packages
         run: |
           set -exo pipefail;
-          if [ $(python3.8 -m twine check dist/* | grep -c 'warning') != 0 ]; then exit 1; fi
+          if [ $(python3.11 -m twine check dist/* | grep -c 'warning') != 0 ]; then exit 1; fi
 
   lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v1
-      - name: Set up Python 3.8
+      - name: Set up Python 3.11
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.11
       - name: Install dependencies
         run: |
           python3.8 -m pip install nox
@@ -44,13 +44,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Set up Python 3.8
+      - name: Set up Python 3.11
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.11
       - name: Install dependencies
         run: |
-          python3.8 -m pip install nox
+          python3.11 -m pip install nox
       - name: Build the docs
         run: nox -s docs
 
@@ -60,7 +60,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [2.7, 3.5, 3.6, 3.7, 3.8, 3.9]
+        python-version: [3.10, 3.11]
         es-version: [7.0.0, 7.10.0]
 
     steps:
@@ -75,8 +75,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Set up Python 3.8 for Nox
-        if: matrix.python-version != '3.8'
+      - name: Set up Python 3.11 for Nox
+        if: matrix.python-version != '3.11'
         uses: actions/setup-python@v2
         with:
           python-version: 3
