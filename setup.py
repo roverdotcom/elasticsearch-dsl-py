@@ -20,7 +20,7 @@ from os.path import dirname, join
 
 from setuptools import find_packages, setup
 
-VERSION = (7, 4, 1, "rover-prod-py311")
+VERSION = (7, 4, 1, "rover.prod.py311")
 __version__ = VERSION
 __versionstr__ = ".".join(map(str, VERSION))
 
