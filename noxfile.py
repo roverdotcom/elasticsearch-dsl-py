@@ -28,7 +28,7 @@ SOURCE_FILES = (
 )
 
 
-@nox.session(python=["3.10", "3.11"])
+@nox.session(python=["3.11"])
 def test(session):
     session.install(".[develop]")
 
