@@ -20,7 +20,7 @@ from os.path import dirname, join
 
 from setuptools import find_packages, setup
 
-VERSION = (7, 4, 1)
+VERSION = (7, 4, 1, "dev3")
 __version__ = VERSION
 __versionstr__ = ".".join(map(str, VERSION))
 
@@ -67,15 +67,7 @@ setup(
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
